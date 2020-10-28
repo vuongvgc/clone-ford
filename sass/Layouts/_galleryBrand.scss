@@ -2,15 +2,63 @@
   
     position: relative;
     .galleryBrand__box {
+        width: 100%;
+        overflow: hidden;
        img {
            width: 100%;
+           transform: scale(1);
+           transition: all .2s;
+        }
+       &:hover {
+        img {
+            transform: scale(1.1);
+        }
        }
     }
     .galleryBrand__text {
         position: absolute;
         bottom: 0;
         left: 0;
-        background-color: $color-blue-light-3;
+        background-color: rgba($color: $color-blue-light-3, $alpha: 0.7);
         width: 100%;
+        padding: $pd-3;
+        justify-content: space-between;
+        align-items: baseline;
+        p, i {
+            line-height: 20px;
+            color: $color-white-0;
+            padding: 0;
+            margin: 0;
+        }
+        .link__icon{
+            border: 1px solid $color-white-0;
+            border-radius: 50%;
+            transition: all .1s;
+            i {
+                padding: 0.5rem 1rem;
+            }
+            &:hover {
+                background-color: $color-white-0;
+                i {
+                    color: $color-blue-light-3;
+                }
+            }
+        }
+    }
+    .galleryBrand__box-big {
+        letter-spacing: 2px;
+        .header__tertiary {
+            @include styleText($fs-5, $fw-normal, $color-black-0);
+            @include marginText();
+        }
+        p {
+            @include styleText($fs-2_2, $fw-bold-0, $color-gray-3_3);
+            @include marginText();
+        }
+    }
+    .galleryBrand__box-4 {
+        .galleryBrand__text {
+            font-size: $fs-5;
+        }
     }
 }

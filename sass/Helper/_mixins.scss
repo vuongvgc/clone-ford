@@ -78,7 +78,9 @@
     color: $color;
     font-size: $fs-7;
     font-weight: $fw-normal-0;
-    margin: $mg-2 0 $mg-1;
     text-align: center;
+    @include marginText();
 }
-
+@mixin marginText() {
+    margin: 20px 0px 10px;
+}
