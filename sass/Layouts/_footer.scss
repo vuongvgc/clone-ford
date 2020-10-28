@@ -12,3 +12,46 @@
     }
     
 }
+.footer__search {
+    padding: $pd-4;
+    font-size: 1.6rem;
+    background-color: $color-black-0;
+    justify-content: space-between;
+    align-items: center;
+      .nav-search__box {
+        color: $color-white-0;
+        padding: 2rem;
+        span {
+            i {
+                font-size: $fs-4;
+            }
+        }
+        input {
+            background-color: transparent;
+            letter-spacing: 2px;
+            border: none;
+            &::placeholder{
+                color: $color-white-0;
+                font-size: $fs-4;
+            }
+            &:visited {
+                color: red;
+            }
+        }
+      }
+      .nav-text__box {
+          justify-content: flex-end;
+          .nav-item {
+              list-style-type: none;
+              .nav-link {
+                  text-decoration: none;
+                  color: $color-gray-2_2;
+              }
+              .active{
+                background-color: transparent;
+                color: $color-white-0;
+            }
+              
+          }
+      }
+}

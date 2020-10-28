@@ -391,4 +391,54 @@ body {
   color: #fff;
   text-align: center;
 }
+
+.footer__search {
+  padding: 2rem;
+  font-size: 1.6rem;
+  background-color: #333333;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__search .nav-search__box {
+  color: #fff;
+  padding: 2rem;
+}
+
+.footer__search .nav-search__box span i {
+  font-size: 2.4rem;
+}
+
+.footer__search .nav-search__box input {
+  background-color: transparent;
+  letter-spacing: 2px;
+  border: none;
+}
+
+.footer__search .nav-search__box input::placeholder {
+  color: #fff;
+  font-size: 2.4rem;
+}
+
+.footer__search .nav-search__box input:visited {
+  color: red;
+}
+
+.footer__search .nav-text__box {
+  justify-content: flex-end;
+}
+
+.footer__search .nav-text__box .nav-item {
+  list-style-type: none;
+}
+
+.footer__search .nav-text__box .nav-item .nav-link {
+  text-decoration: none;
+  color: #a7a7a7;
+}
+
+.footer__search .nav-text__box .nav-item .active {
+  background-color: transparent;
+  color: #fff;
+}
 /*# sourceMappingURL=main.css.map */
