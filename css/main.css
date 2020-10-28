@@ -115,11 +115,41 @@ body {
   background-color: #fff;
   border: 1px solid #0276b3;
   border-radius: 2px;
-  padding: 1.5rem 4rem;
+  padding: 1.5rem 2.5rem;
 }
 
 .btn-blue:hover .btn-link {
   color: #0276b3;
+}
+
+.btn-orange {
+  background-color: #d92e14;
+  border: 1px solid #d92e14;
+  border-radius: 2px;
+  padding: 1.5rem 2.5rem;
+  margin: 40px  0 0 0;
+  text-align: center;
+  transition: all .1s;
+}
+
+.btn-orange .btn-link {
+  text-decoration: none;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #fff;
+  font-size: 1.4rem;
+  padding: 0 4rem;
+}
+
+.btn-orange:hover {
+  background-color: #fff;
+  border: 1px solid #d92e14;
+  border-radius: 2px;
+  padding: 1.5rem 2rem;
+}
+
+.btn-orange:hover .btn-link {
+  color: #d92e14;
 }
 
 .introduction__section .header__primary {
@@ -249,5 +279,31 @@ body {
 
 .galleryBrand__section .galleryBrand__box-4 .galleryBrand__text {
   font-size: 2.75rem;
+}
+
+.feature__section {
+  background-color: #f7f7f7;
+  padding: 4rem;
+}
+
+.feature__section .header__primary {
+  color: #d92e14;
+  font-size: 4.2rem;
+  font-weight: 500;
+  text-align: center;
+  margin: 20px 0px 10px;
+  margin: 0;
+}
+
+.feature__section .header__text {
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: #333333;
+  text-align: center;
+}
+
+.feature__section .introduction__img img {
+  width: 100%;
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */
