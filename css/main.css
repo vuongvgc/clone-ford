@@ -122,6 +122,36 @@ body {
   color: #0276b3;
 }
 
+.btn-blue-big {
+  background-color: #0276b3;
+  border: 1px solid #0276b3;
+  border-radius: 2px;
+  padding: 1.5rem 1rem;
+  margin: 0;
+  text-align: center;
+  transition: all .1s;
+}
+
+.btn-blue-big .btn-link {
+  text-decoration: none;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #fff;
+  font-size: 1.4rem;
+  padding: 0 4rem;
+}
+
+.btn-blue-big:hover {
+  background-color: #fff;
+  border: 1px solid #0276b3;
+  border-radius: 2px;
+  padding: 1.5rem 1rem;
+}
+
+.btn-blue-big:hover .btn-link {
+  color: #0276b3;
+}
+
 .btn-orange {
   background-color: #d92e14;
   border: 1px solid #d92e14;
@@ -335,9 +365,30 @@ body {
 /* Style the collapsible content. Note: hidden by default */
 .disclosure__content {
   padding: 0 18px;
-  display: none;
   overflow: scroll;
   height: 20rem;
   background-color: #f1f1f1;
+}
+
+.footer__banner {
+  background-color: #092a46;
+  padding: 2rem 2rem 1.5rem;
+  letter-spacing: 2px;
+}
+
+.footer__banner .header__primary {
+  color: #fff;
+  font-size: 4.2rem;
+  font-weight: 500;
+  text-align: center;
+  margin: 20px 0px 10px;
+  font-weight: 500;
+}
+
+.footer__banner .header__text {
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: #fff;
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */

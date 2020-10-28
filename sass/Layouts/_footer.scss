@@ -1,0 +1,14 @@
+.footer__banner {
+    background-color: $color-dark-3;
+    padding: 2rem 2rem 1.5rem;
+    letter-spacing: 2px;
+    .header__primary {
+        @include Header__primary($color-white-0);
+        font-weight: 500;
+    }
+    .header__text {
+        @include styleText($fs-2 + 0.2, 300, $color-white-0);
+        text-align: center;
+    }
+    
+}
