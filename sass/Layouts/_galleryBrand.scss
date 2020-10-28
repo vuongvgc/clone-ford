@@ -1,0 +1,16 @@
+.galleryBrand__section {
+  
+    position: relative;
+    .galleryBrand__box {
+       img {
+           width: 100%;
+       }
+    }
+    .galleryBrand__text {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: $color-blue-light-3;
+        width: 100%;
+    }
+}
