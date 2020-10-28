@@ -1,0 +1,41 @@
+
+/*--------------------
+-----Dep 1: Minh----
+--------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------
+-----Dep 2: Vương----
+--------------------*/
+.btn-blue {
+    @include styleBtn($color-blue-light-3, $color-blue-light-3, $border-radius, $pd-3, $pd-6);
+    margin: 40px  0 0 0;
+    text-align: center;
+    transition: all .1s;
+    .btn-link {
+        text-decoration: none;
+        letter-spacing: 2px;
+        text-align: center;
+        color: $color-white-0;
+        font-size: $fs-2;
+        padding: 0 $pd-6;
+    }
+    &:hover{
+        @include styleBtn($color-white-0, $color-blue-light-3, $border-radius, $pd-3, $pd-6);
+        .btn-link {
+            color: $color-blue-light-3;
+        }
+    }
+}

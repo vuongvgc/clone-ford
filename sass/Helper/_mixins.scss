@@ -1,0 +1,84 @@
+// styleText 
+@mixin styleText($fs,$fw, $color) {
+    font-size: $fs;
+    font-weight: $fw;
+    color: $color;
+}
+
+// button 
+@mixin styleBtn($bg, $bd-color, $bd-radius, $py, $px) {
+    background-color: $bg;
+    border: 1px solid $bd-color;
+    border-radius: $bd-radius;
+    padding: $py $px;
+}
+
+
+
+// center text box 
+@mixin centerTextBox() {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+// MEDIA QUERY MANAGER
+// 0 - 600px:      Phone
+// 600 - 900px:    Tablet portrait
+// 900 - 1200px:   Tablet landscape
+// [1200 - 1800] is where our normal styles apply
+// 1800px + :      Big desktop
+
+// $breakpoint arguement choices:
+// - phone
+// - tab-port
+// - tab-land
+// - big-desktop
+
+// ORDER: Base + typography > general layout + grid > page layout > components
+
+// 1em = 16px
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 48em) { @content };    //600px
+    }
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 62em) { @content };     //992px
+    }
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+}
+
+/*--------------------
+-----Dep 1: Minh----
+--------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------
+-----Dep 2: Vương----
+--------------------*/
+// header 
+@mixin Header__primary($color) {
+    color: $color;
+    font-size: $fs-7;
+    font-weight: $fw-normal-0;
+    margin: $mg-2 0 $mg-1;
+    text-align: center;
+}
+

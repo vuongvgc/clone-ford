@@ -1,0 +1,8 @@
+Sass: pilar 7-1
+-base: reset, customize
+-helper: variable, extend, mixin
+-component: button, form => use common 
+-page: home , product, admin => architect single 
+-layout: header, carousel, infor, footer, contact => use common
+-venders: extension library
+-theme: dark, light, noel => change color 
