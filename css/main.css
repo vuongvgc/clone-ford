@@ -393,7 +393,7 @@ body {
 }
 
 .footer__search {
-  padding: 2rem;
+  padding: 2.5rem 2rem;
   font-size: 1.6rem;
   background-color: #333333;
   justify-content: space-between;
@@ -441,6 +441,13 @@ body {
 .footer__search .nav-text__box .nav-item .nav-link {
   text-decoration: none;
   color: #a7a7a7;
+  transition: all .2s;
+  letter-spacing: 1px;
+}
+
+.footer__search .nav-text__box .nav-item .nav-link:hover {
+  background-color: transparent;
+  color: #fff;
 }
 
 .footer__search .nav-text__box .nav-item .active {
@@ -451,5 +458,39 @@ body {
 .nav-search__box:hover {
   outline-offset: 5px;
   outline: 1px solid #0276b3 !important;
+}
+
+.footer__main {
+  justify-content: space-between;
+  padding: 4rem 4rem 10rem 4rem;
+  background-color: #242424;
+}
+
+.footer__main .nav-text__box {
+  justify-content: flex-end;
+}
+
+.footer__main .nav-text__box .nav-item {
+  list-style-type: none;
+}
+
+.footer__main .nav-text__box .nav-item .nav-link {
+  text-decoration: none;
+  color: #a7a7a7;
+  transition: all .2s;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+}
+
+.footer__main .nav-text__box .nav-item .nav-link:hover {
+  background-color: transparent;
+  color: #fff;
+}
+
+.footer__main .nav-text__box .nav-item .active {
+  background-color: transparent;
+  color: #fff;
+  padding-bottom: 3rem;
+  font-size: 1.6rem;
 }
 /*# sourceMappingURL=main.css.map */
