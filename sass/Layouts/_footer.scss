@@ -104,3 +104,64 @@
         }
     }
 }
+.footer__secondary {
+    background-color: $color-dark-2;
+    padding: 4rem 5rem;
+    justify-content: space-between;
+    align-items: baseline;
+    .footer__messenger {
+        justify-content: space-around;
+        .messenger__box {
+            .icon__round {
+                width: 4rem;
+                height: 4rem;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 4rem;
+                background-color: $color-blue-light-1;
+                color: $color-white-0;
+                font-size: 2rem;
+            }
+            .messenger__text {
+                padding-left: 1.5rem;
+                line-height: 4rem;
+                letter-spacing: 1px;
+                @include styleText(1.8rem, 300, $color-blue-light-2);
+            }
+
+        }
+        
+    }
+    .footer__social {
+        justify-content: flex-end;
+        .social__text {
+            padding-right: 3rem;
+            line-height: 4rem;
+            letter-spacing: 1px;
+            @include styleText(1.6rem, 300, $color-white-0);
+        }
+        .icon__square {
+            width: 4rem;
+            height: 4rem;
+            text-align: center;
+            line-height: 4rem;
+            background-color: $color-blue-light-1;
+            color: $color-white-0;
+            font-size: 2rem;
+            margin-left:.5rem;
+        }
+        .icon__fb {
+            background-color: #4064AC;
+        }
+        .icon__tw {
+            background-color: #71C9F8;
+        }
+        .icon__youtube {
+            background-color: #FF0000;
+        }
+        .icon__in {
+            background-color: #EDB7D9;
+        }
+
+    }
+}
