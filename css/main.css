@@ -402,7 +402,7 @@ body {
 
 .footer__search .nav-search__box {
   color: #fff;
-  padding: 2rem;
+  padding: 0.5rem 1rem;
 }
 
 .footer__search .nav-search__box span i {
@@ -412,7 +412,11 @@ body {
 .footer__search .nav-search__box input {
   background-color: transparent;
   letter-spacing: 2px;
-  border: none;
+  border: 0 none;
+  margin: 0;
+  font-size: 2.4rem;
+  z-index: 5;
+  padding-left: 2rem;
 }
 
 .footer__search .nav-search__box input::placeholder {
@@ -420,8 +424,10 @@ body {
   font-size: 2.4rem;
 }
 
-.footer__search .nav-search__box input:visited {
-  color: red;
+.footer__search .nav-search__box input:focus {
+  outline: 0;
+  outline-offset: 0;
+  color: #fff;
 }
 
 .footer__search .nav-text__box {
@@ -440,5 +446,10 @@ body {
 .footer__search .nav-text__box .nav-item .active {
   background-color: transparent;
   color: #fff;
+}
+
+.nav-search__box:hover {
+  outline-offset: 5px;
+  outline: 1px solid #0276b3 !important;
 }
 /*# sourceMappingURL=main.css.map */

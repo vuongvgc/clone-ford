@@ -20,7 +20,7 @@
     align-items: center;
       .nav-search__box {
         color: $color-white-0;
-        padding: 2rem;
+        padding: 0.5rem 1rem;
         span {
             i {
                 font-size: $fs-4;
@@ -29,15 +29,24 @@
         input {
             background-color: transparent;
             letter-spacing: 2px;
-            border: none;
+            border: 0 none;
+            margin: 0;
+            font-size: 2.4rem;
+            z-index: 5;
+            padding-left: 2rem;
             &::placeholder{
                 color: $color-white-0;
                 font-size: $fs-4;
             }
-            &:visited {
-                color: red;
+            &:focus {
+                outline: 0;
+                outline-offset: 0;
+                color: $color-white-0;
             }
+            
+            
         }
+        
       }
       .nav-text__box {
           justify-content: flex-end;
@@ -54,4 +63,8 @@
               
           }
       }
+}
+.nav-search__box:hover {
+    outline-offset: 5px;
+    outline: 1px solid #0276b3 !important;
 }
