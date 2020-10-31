@@ -165,3 +165,66 @@
 
     }
 }
+.footer__tertiary {
+    padding: 5rem;
+    .footer__logo {
+        justify-content: space-between;
+        .footer__language {
+            i {
+                font-size: $fs-4;
+                padding-right: 2rem;
+                color: $color-blue-light-3;
+                transition: all .3s;
+            }
+            a {
+                display: inline-block;
+                text-decoration: underline;
+                font-size: $fs-2;
+                vertical-align: 0.5rem;
+                transition: all .3s;
+            }
+            &:hover i, &:hover a  {
+                color: $color-black-0;
+            }
+        }
+        .footer__logo-ford {
+            text-align: right;
+            img {
+                width: 50%;
+            }
+        }
+    }
+    .footer__copyright{
+        padding: 1rem 0;
+        a {
+            @include styleText($fs-1, $fw-normal, $color-gray-3_4);
+            letter-spacing: 1px;
+            text-decoration: none;
+            
+        }
+    }
+    .footer__nav {
+        padding: 0;
+        .nav-text__box {
+            justify-content: space-between;
+            .nav-item {
+                list-style-type: none;
+                .nav-link {
+                      text-decoration: none;
+                      color: $color-gray-3_4;
+                      transition: all .2s;
+                      letter-spacing: 1px;
+                      padding: 0rem;
+                    &:hover {
+                      color: $color-dark-2;
+                  }
+                }
+                .active{
+                  background-color: transparent;
+                  color: $color-white-0;
+              }
+                
+            }
+        }
+    }
+}

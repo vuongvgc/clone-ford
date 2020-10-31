@@ -564,4 +564,80 @@ body {
 .footer__secondary .footer__social .icon__in {
   background-color: #EDB7D9;
 }
+
+.footer__tertiary {
+  padding: 5rem;
+}
+
+.footer__tertiary .footer__logo {
+  justify-content: space-between;
+}
+
+.footer__tertiary .footer__logo .footer__language i {
+  font-size: 2.4rem;
+  padding-right: 2rem;
+  color: #0276b3;
+  transition: all .3s;
+}
+
+.footer__tertiary .footer__logo .footer__language a {
+  display: inline-block;
+  text-decoration: underline;
+  font-size: 1.4rem;
+  vertical-align: 0.5rem;
+  transition: all .3s;
+}
+
+.footer__tertiary .footer__logo .footer__language:hover i, .footer__tertiary .footer__logo .footer__language:hover a {
+  color: #333333;
+}
+
+.footer__tertiary .footer__logo .footer__logo-ford {
+  text-align: right;
+}
+
+.footer__tertiary .footer__logo .footer__logo-ford img {
+  width: 50%;
+}
+
+.footer__tertiary .footer__copyright {
+  padding: 1rem 0;
+}
+
+.footer__tertiary .footer__copyright a {
+  font-size: 1.3rem;
+  font-weight: normal;
+  color: #555555;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.footer__tertiary .footer__nav {
+  padding: 0;
+}
+
+.footer__tertiary .footer__nav .nav-text__box {
+  justify-content: space-between;
+}
+
+.footer__tertiary .footer__nav .nav-text__box .nav-item {
+  list-style-type: none;
+}
+
+.footer__tertiary .footer__nav .nav-text__box .nav-item .nav-link {
+  text-decoration: none;
+  color: #555555;
+  transition: all .2s;
+  letter-spacing: 1px;
+  padding: 0rem;
+}
+
+.footer__tertiary .footer__nav .nav-text__box .nav-item .nav-link:hover {
+  color: #102b4e;
+}
+
+.footer__tertiary .footer__nav .nav-text__box .nav-item .active {
+  background-color: transparent;
+  color: #fff;
+}
 /*# sourceMappingURL=main.css.map */
