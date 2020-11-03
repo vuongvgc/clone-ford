@@ -60,4 +60,30 @@
             font-size: $fs-5;
         }
     }
+    .view-all__box {
+        display: none;
+        background-color: $color-blue-light-3;
+        text-align: center;
+        @include styleText($fs-5, $fw-normal, $color-white-0);
+        padding: 2rem;
+        span {
+            padding-right: 1rem;
+        }
+
+    }
+    @include respond(phone){
+        .view-all__box {
+            display: block;
+        }
+        .galleryBrand__dropdown {
+            display: none;
+        }
+        .galleryBrand__show {
+            display: block;
+        }
+        .galleryBrand__hide {
+            display: none;
+        }
+    }
+    
 }

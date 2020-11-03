@@ -311,6 +311,35 @@ body {
   font-size: 2.75rem;
 }
 
+.galleryBrand__section .view-all__box {
+  display: none;
+  background-color: #0276b3;
+  text-align: center;
+  font-size: 2.75rem;
+  font-weight: normal;
+  color: #fff;
+  padding: 2rem;
+}
+
+.galleryBrand__section .view-all__box span {
+  padding-right: 1rem;
+}
+
+@media only screen and (max-width: 48em) {
+  .galleryBrand__section .view-all__box {
+    display: block;
+  }
+  .galleryBrand__section .galleryBrand__dropdown {
+    display: none;
+  }
+  .galleryBrand__section .galleryBrand__show {
+    display: block;
+  }
+  .galleryBrand__section .galleryBrand__hide {
+    display: none;
+  }
+}
+
 .feature__section {
   background-color: #f7f7f7;
   padding: 4rem;
