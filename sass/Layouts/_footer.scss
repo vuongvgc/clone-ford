@@ -102,7 +102,48 @@
           }
             
         }
+        
     }
+    .nav__dropdown-box {
+        display: none;
+        .respond-dropdown__phone {
+            display: none;
+        }
+        @include respond(phone){
+            .respond-dropdown__phone {
+                display: block;
+            }
+        }
+    }
+    @include respond(tab-port) { // width < 992?
+        .footer-nav__tab-port {
+            width: 0;
+            display: none;
+        }
+        .nav__dropdown-box {
+            display:block;
+            width: 50%;
+        }
+    }
+    @include respond(phone){
+        .footer-nav__phone {
+            display: none;
+        }
+        .nav__dropdown-box {
+            display:block;
+            width: 50%;
+        }
+        .nav__dropdown-box {
+            display:block;
+            width: 100%;
+            padding: 0;
+            .respond-dropdown__phone {
+                display: block;
+            }
+        }
+    }
+    
+    
 }
 .footer__secondary {
     background-color: $color-dark-2;

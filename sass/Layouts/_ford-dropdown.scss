@@ -1,0 +1,102 @@
+.ford-dropdown__section {
+	background-color: transparent;
+}
+.ford-dropdown__box {
+	width: 100%;
+	margin: 0 auto;
+  & > ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2rem 0;
+  }
+}
+
+// =============================================================================
+//	Mixins and Variables
+// =============================================================================
+
+@mixin ul-nostyle {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+// =============================================================================
+//	Classes
+// =============================================================================
+
+
+.ford-dropdown__item {
+	a {
+		text-decoration: none;
+	}
+
+	[data-toggle="dropdown"] {
+		position: relative;
+		display: block;
+		color: $color-white-0;
+		padding: 1rem 1rem 3rem 0rem;
+		border-bottom: 1px solid $color-border;
+		background-color: transparent;
+        font-size: $fs-2 + 0.2;
+
+	}
+	.icon-arrow {
+		position: absolute;
+		display: block;
+		font-size: 1em;
+		color: #fff;
+		top: 14px;
+		right: 10px;
+
+		&.ford-open {
+			transform: rotate(-180deg);
+			transition: all .5s;
+		}
+		&.ford-close {
+			transform: rotate(0deg);
+			transition: all .5s;
+		}
+
+		&:before {
+			content: '\25BC';
+		}
+	}
+
+	.ford-dropdown__menu {
+		max-height: 0;
+		overflow: hidden;
+		@include ul-nostyle;
+
+		li {
+			padding: 0;
+
+			a {
+				display: block;
+				text-decoration: none;
+                color: $color-gray-2_2;
+                transition: all .2s;
+                font-size: $fs-2;
+				letter-spacing: 1px;
+                padding: .5rem 1rem;
+                &:hover {
+                    background-color: transparent;
+                    color: $color-white-0;
+                }
+			}
+		}
+	}
+
+	// .ford-show, .ford-hide {
+	// 	@include transform-origin(50%, 0%);
+	// }
+
+	.ford-show {
+		display: block;
+		max-height: 9999px;
+	}
+
+	.ford-hide {
+		max-height: 0;
+	}
+}
+
