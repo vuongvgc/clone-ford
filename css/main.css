@@ -484,6 +484,16 @@ body {
   color: #fff;
 }
 
+@media only screen and (max-width: 48em) {
+  .footer__search .nav-search__box {
+    display: none;
+    width: 0;
+  }
+  .footer__search .nav-text__box {
+    justify-content: flex-start;
+  }
+}
+
 .nav-search__box:hover {
   outline-offset: 5px;
   outline: 1px solid #0276b3 !important;

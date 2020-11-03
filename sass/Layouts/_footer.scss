@@ -48,6 +48,7 @@
         }
         
       }
+      
       .nav-text__box {
           justify-content: flex-end;
           .nav-item {
@@ -69,6 +70,15 @@
               
           }
       }
+      @include respond(phone){
+        .nav-search__box {
+            display: none;
+            width: 0;
+        }
+        .nav-text__box {
+            justify-content: flex-start;
+        }
+    }
 }
 .nav-search__box:hover {
     outline-offset: 5px;
