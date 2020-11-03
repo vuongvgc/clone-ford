@@ -1,25 +1,23 @@
 /* Style the button that is used to open and close the collapsible content */
 .disclosure__collapsible {
-    background-color:$color-white-0;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
     width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-    text-transform: uppercase;
     text-align: center;
-    transition: all .5s;
-    &:hover {
-        border: 1px solid $color-blue-light-3;
+    padding: 2rem;
+    a {
+      text-decoration: none;
+      text-transform: uppercase;
+      @include styleText($fs-2, $fw-normal, $color-blue-light-1);
+      padding: 1rem;
+      letter-spacing: 1px;
+      transition: all .5s;
+      &:hover {
+        color: $color-dark-1;
+        
+      }
     }
-  }
-  
-  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-  .active, .disclosure__collapsible:hover {
-    background-color: #ccc;
+    &:hover {
+      background-color: $color-white-0;
+    }
   }
   
   /* Style the collapsible content. Note: hidden by default */
