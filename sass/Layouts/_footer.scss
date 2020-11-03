@@ -211,6 +211,7 @@
         }
         .icon__fb {
             background-color: #4064AC;
+            margin-left: 0;
         }
         .icon__tw {
             background-color: #71C9F8;
@@ -222,6 +223,16 @@
             background-color: #EDB7D9;
         }
 
+    }
+    @include respond(phone){
+        .footer__messenger {
+            border-bottom: 1px solid $color-white-0;
+            margin-bottom: 1rem;
+        }
+        .footer__social {
+            padding: 1rem 0;
+            justify-content: flex-start;
+        }
     }
 }
 .footer__tertiary {
@@ -246,11 +257,23 @@
                 color: $color-black-0;
             }
         }
-        .footer__logo-ford {
+        .footer__logo-ford, .footer__logo-ford-phone  {
             text-align: right;
             img {
                 width: 50%;
             }
+        }  
+    }
+    .footer__logo-phone {
+        display: none;
+    }
+    @include respond(phone){
+        .footer__logo-ford {
+            display: none;
+        }
+        .footer__logo-phone{
+            display: block;
+            width: 20%;
         }
     }
     .footer__copyright{
@@ -287,6 +310,12 @@
             @include respond(tab-port){
                 .nav-item {
                     width: 20%;
+                    padding: 1rem 0;
+                }
+            }
+            @include respond(phone){
+                .nav-item {
+                    width: 100%;
                     padding: 1rem 0;
                 }
             }

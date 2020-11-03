@@ -640,6 +640,7 @@ body {
 
 .footer__secondary .footer__social .icon__fb {
   background-color: #4064AC;
+  margin-left: 0;
 }
 
 .footer__secondary .footer__social .icon__tw {
@@ -652,6 +653,17 @@ body {
 
 .footer__secondary .footer__social .icon__in {
   background-color: #EDB7D9;
+}
+
+@media only screen and (max-width: 48em) {
+  .footer__secondary .footer__messenger {
+    border-bottom: 1px solid #fff;
+    margin-bottom: 1rem;
+  }
+  .footer__secondary .footer__social {
+    padding: 1rem 0;
+    justify-content: flex-start;
+  }
 }
 
 .footer__tertiary {
@@ -681,12 +693,26 @@ body {
   color: #333333;
 }
 
-.footer__tertiary .footer__logo .footer__logo-ford {
+.footer__tertiary .footer__logo .footer__logo-ford, .footer__tertiary .footer__logo .footer__logo-ford-phone {
   text-align: right;
 }
 
-.footer__tertiary .footer__logo .footer__logo-ford img {
+.footer__tertiary .footer__logo .footer__logo-ford img, .footer__tertiary .footer__logo .footer__logo-ford-phone img {
   width: 50%;
+}
+
+.footer__tertiary .footer__logo-phone {
+  display: none;
+}
+
+@media only screen and (max-width: 48em) {
+  .footer__tertiary .footer__logo-ford {
+    display: none;
+  }
+  .footer__tertiary .footer__logo-phone {
+    display: block;
+    width: 20%;
+  }
 }
 
 .footer__tertiary .footer__copyright {
@@ -733,6 +759,13 @@ body {
 @media only screen and (max-width: 62em) {
   .footer__tertiary .footer__nav .nav-text__box .nav-item {
     width: 20%;
+    padding: 1rem 0;
+  }
+}
+
+@media only screen and (max-width: 48em) {
+  .footer__tertiary .footer__nav .nav-text__box .nav-item {
+    width: 100%;
     padding: 1rem 0;
   }
 }
