@@ -568,6 +568,13 @@ body {
   color: #37a9e8;
 }
 
+@media only screen and (max-width: 62em) {
+  .footer__secondary .footer__messenger .messenger__box-tab-port {
+    display: none;
+    width: 0%;
+  }
+}
+
 .footer__secondary .footer__social {
   justify-content: flex-end;
 }
@@ -682,6 +689,13 @@ body {
 .footer__tertiary .footer__nav .nav-text__box .nav-item .active {
   background-color: transparent;
   color: #fff;
+}
+
+@media only screen and (max-width: 62em) {
+  .footer__tertiary .footer__nav .nav-text__box .nav-item {
+    width: 20%;
+    padding: 1rem 0;
+  }
 }
 
 .ford-dropdown__section {

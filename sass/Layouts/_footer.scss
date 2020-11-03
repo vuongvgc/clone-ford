@@ -171,6 +171,14 @@
             }
 
         }
+        @include respond(tab-port){
+            .messenger__box-tab-port {
+                display: none;
+                width: 0%;
+            }
+        }
+        
+
         
     }
     .footer__social {
@@ -265,6 +273,12 @@
                   color: $color-white-0;
               }
                 
+            }
+            @include respond(tab-port){
+                .nav-item {
+                    width: 20%;
+                    padding: 1rem 0;
+                }
             }
         }
     }
