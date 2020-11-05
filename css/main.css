@@ -115,7 +115,7 @@ body {
   background-color: #fff;
   border: 1px solid #0276b3;
   border-radius: 2px;
-  padding: 1.5rem 2.5rem;
+  padding: 1.5rem 4rem;
 }
 
 .btn-blue:hover .btn-link {
@@ -175,7 +175,7 @@ body {
   background-color: #fff;
   border: 1px solid #d92e14;
   border-radius: 2px;
-  padding: 1.5rem 2rem;
+  padding: 1.5rem 2.5rem;
 }
 
 .btn-orange:hover .btn-link {
@@ -366,7 +366,6 @@ body {
   text-align: center;
 }
 
-/* Style the button that is used to open and close the collapsible content */
 .disclosure__collapsible {
   width: 100%;
   text-align: center;
@@ -392,12 +391,24 @@ body {
   background-color: #fff;
 }
 
-/* Style the collapsible content. Note: hidden by default */
 .disclosure__content {
-  padding: 0 18px;
-  overflow: scroll;
+  padding: 2rem 4rem;
+  background-color: #F7F7F7;
+}
+
+.disclosure__content .disclosures__text::-webkit-scrollbar-thumb {
+  background-color: #0276b3 !important;
+  width: 1.1rem;
+}
+
+.disclosure__content .disclosures__text {
+  overflow-y: scroll;
   height: 20rem;
-  background-color: #f1f1f1;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  scrollbar-width: 2rem;
+  scrollbar-color: red !important;
 }
 
 .footer__banner {

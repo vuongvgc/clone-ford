@@ -1,4 +1,3 @@
-/* Style the button that is used to open and close the collapsible content */
 .disclosure__collapsible {
     width: 100%;
     text-align: center;
@@ -19,12 +18,21 @@
       background-color: $color-white-0;
     }
   }
-  
-  /* Style the collapsible content. Note: hidden by default */
   .disclosure__content {
-    padding: 0 18px;
-    overflow: scroll;
-    height: 20rem;
-    background-color: #f1f1f1;
-    
+    padding: 2rem 4rem;
+    background-color:#F7F7F7;
+    .disclosures__text::-webkit-scrollbar-thumb {
+      background-color: #0276b3 !important;
+      width: 1.1rem;
+      
+    }
+    .disclosures__text {
+      overflow-y: scroll;
+      height: 20rem;
+      padding: 0;
+      margin: 0;
+      list-style-type: none;
+      scrollbar-width: 2rem;
+      scrollbar-color: red !important;
+    }
   }
