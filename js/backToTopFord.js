@@ -1,3 +1,7 @@
+/**
+ * Function: Back to top
+ * author: Do Minh Vuong
+ */
 $(document).ready(function(){
 	$(window).scroll(function () {
 			if ($(this).scrollTop() > 50) {
