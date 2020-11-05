@@ -1,5 +1,5 @@
 // styleText 
-@mixin styleText($fs,$fw, $color) {
+@mixin styleText($fs, $fw, $color) {
     font-size: $fs;
     font-weight: $fw;
     color: $color;
@@ -22,9 +22,10 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 // MEDIA QUERY MANAGER
-// 0 - 600px:      Phone
-// 600 - 900px:    Tablet portrait
+// 0 - 768px:      Phone
+// 600 - 992px:    Tablet portrait
 // 900 - 1200px:   Tablet landscape
 // [1200 - 1800] is where our normal styles apply
 // 1800px + :      Big desktop
@@ -39,17 +40,36 @@
 
 // 1em = 16px
 @mixin respond($breakpoint) {
-    @if $breakpoint == phone {
-        @media only screen and (max-width: 48em) { @content };    //600px
+    @if $breakpoint==phone {
+        @media only screen and (max-width: 48em) {
+            @content
+        }
+
+        ; //868px
     }
-    @if $breakpoint == tab-port {
-        @media only screen and (max-width: 62em) { @content };     //992px
+
+    @if $breakpoint==tab-port {
+        @media only screen and (max-width: 62em) {
+            @content
+        }
+
+        ; //992px
     }
-    @if $breakpoint == tab-land {
-        @media only screen and (max-width: 75em) { @content };    //1200px
+
+    @if $breakpoint==tab-land {
+        @media only screen and (max-width: 75em) {
+            @content
+        }
+
+        ; //1200px
     }
-    @if $breakpoint == big-desktop {
-        @media only screen and (min-width: 112.5em) { @content };    //1800
+
+    @if $breakpoint==big-desktop {
+        @media only screen and (min-width: 112.5em) {
+            @content
+        }
+
+        ; //1800
     }
 }
 
@@ -81,6 +101,14 @@
     text-align: center;
     @include marginText();
 }
+
+// margin text 
 @mixin marginText() {
     margin: 20px 0px 10px;
+}
+// ul-noStyle 
+@mixin ul-nostyle {
+	list-style: none;
+	padding: 0;
+	margin: 0;
 }

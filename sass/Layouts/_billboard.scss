@@ -1,24 +1,26 @@
-
 .billboard__section {
     background: url(../../img/billboard.jpeg);
     background-position: center;
     background-size: cover;
     height: 200px;
+
     .billboard__box {
         text-align: center;
         padding: $pd-5;
         letter-spacing: 2px;
+
         .header__primary {
             @include Header__primary($color-white-0);
             margin-bottom: $mg-3;
         }
+
         .billboard__link {
-            @include styleText($fs-2, $fw-normal,$color-white-0);
+            @include styleText($fs-2, $fw-normal, $color-white-0);
             text-transform: uppercase;
             text-decoration: none;
             margin: $mg-3;
             padding: $pd-4 $pd-2;
         }
     }
-    
+
 }

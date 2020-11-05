@@ -1,38 +1,43 @@
+// button collapsible 
 .disclosure__collapsible {
-    width: 100%;
-    text-align: center;
-    padding: 2rem;
-    a {
-      text-decoration: none;
-      text-transform: uppercase;
-      @include styleText($fs-2, $fw-normal, $color-blue-light-1);
-      padding: 1rem;
-      letter-spacing: 1px;
-      transition: all .5s;
-      &:hover {
-        color: $color-dark-1;
-        
-      }
-    }
+  width: 100%;
+  text-align: center;
+  padding: 2rem;
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+    @include styleText($fs-2, $fw-normal, $color-blue-light-1);
+    padding: 1rem;
+    letter-spacing: 1px;
+    transition: all .5s;
     &:hover {
-      background-color: $color-white-0;
+      color: $color-dark-1;
+
     }
   }
-  .disclosure__content {
-    padding: 2rem 4rem;
-    background-color:#F7F7F7;
-    .disclosures__text::-webkit-scrollbar-thumb {
-      background-color: #0276b3 !important;
-      width: 1.1rem;
-      
-    }
-    .disclosures__text {
-      overflow-y: scroll;
-      height: 20rem;
-      padding: 0;
-      margin: 0;
-      list-style-type: none;
-      scrollbar-width: 2rem;
-      scrollbar-color: red !important;
-    }
+
+  &:hover {
+    background-color: $color-white-0;
   }
+}
+// content when collpasible 
+.disclosure__content {
+  padding: 2rem 4rem;
+  background-color: #F7F7F7;
+
+  .disclosures__text::-webkit-scrollbar-thumb {
+    background-color: #0276b3 !important;
+    width: 1.1rem;
+
+  }
+
+  .disclosures__text {
+    overflow-y: scroll;
+    height: 20rem;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    scrollbar-width: 2rem;
+    scrollbar-color: red !important;
+  }
+}

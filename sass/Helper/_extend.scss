@@ -18,3 +18,12 @@
 /*--------------------
 -----Dep 2: Vương----
 --------------------*/
+// Link text for button 
+.btn-link {
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-align: center;
+    color: $color-white-0;
+    font-size: $fs-2;
+    padding: 0 $pd-6;
+}

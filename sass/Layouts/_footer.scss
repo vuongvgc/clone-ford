@@ -1,31 +1,38 @@
+// banner 
 .footer__banner {
     background-color: $color-dark-3;
     padding: 2rem 2rem 1.5rem;
     letter-spacing: 2px;
+
     .header__primary {
         @include Header__primary($color-white-0);
         font-weight: 500;
     }
+
     .header__text {
         @include styleText($fs-2 + 0.2, 300, $color-white-0);
         text-align: center;
     }
-    
+
 }
+// Search 
 .footer__search {
     padding: $pd-5 $pd-4;
     font-size: 1.6rem;
     background-color: $color-black-0;
     justify-content: space-between;
     align-items: center;
-      .nav-search__box {
+    // left 
+    .nav-search__box {
         color: $color-white-0;
         padding: 0.5rem 1rem;
+        // icon
         span {
             i {
                 font-size: $fs-4;
             }
         }
+        // input 
         input {
             background-color: transparent;
             letter-spacing: 2px;
@@ -34,134 +41,158 @@
             font-size: 2.4rem;
             z-index: 5;
             padding-left: 2rem;
-            &::placeholder{
+        // text placeholder
+            &::placeholder {
                 color: $color-white-0;
                 font-size: $fs-4;
             }
+        // border when focus 
             &:focus {
                 outline: 0;
                 outline-offset: 0;
                 color: $color-white-0;
             }
-            
-            
         }
-        
-      }
-      
-      .nav-text__box {
-          justify-content: flex-end;
-          .nav-item {
-              list-style-type: none;
-              .nav-link {
-                    text-decoration: none;
-                    color: $color-gray-2_2;
-                    transition: all .2s;
-                    letter-spacing: 1px;
-                  &:hover {
+        &:hover {
+            outline-offset: 5px;
+            outline: 1px solid #0276b3 ;
+        }
+
+    }
+    // right 
+    .nav-text__box {
+        justify-content: flex-end;
+
+        .nav-item {
+            list-style-type: none;
+
+            .nav-link {
+                text-decoration: none;
+                color: $color-gray-2_2;
+                transition: all .2s;
+                letter-spacing: 1px;
+
+                &:hover {
                     background-color: transparent;
                     color: $color-white-0;
                 }
-              }
-              .active{
+            }
+
+            .active {
                 background-color: transparent;
                 color: $color-white-0;
             }
-              
-          }
-      }
-      @include respond(phone){
+
+        }
+    }
+    // responsive 
+    @include respond(phone) {
         .nav-search__box {
             display: none;
             width: 0;
         }
+
         .nav-text__box {
             justify-content: flex-start;
         }
     }
 }
-.nav-search__box:hover {
-    outline-offset: 5px;
-    outline: 1px solid #0276b3 !important;
-}
+// main 
 .footer__main {
     justify-content: space-between;
     padding: 4rem 4rem 10rem 4rem;
     background-color: $color-gray-3;
+    // nav text box 
     .nav-text__box {
         justify-content: flex-end;
+
         .nav-item {
             list-style-type: none;
+
             .nav-link {
                 text-decoration: none;
                 color: $color-gray-2_2;
                 transition: all .2s;
                 font-size: $fs-2;
                 letter-spacing: 1px;
+
                 &:hover {
                     background-color: transparent;
                     color: $color-white-0;
                 }
             }
-            .active{
-              background-color: transparent;
-              color: $color-white-0;
-              padding-bottom: 3rem;
-              font-size: $fs-2 + 0.2;
 
-          }
-            
+            .active {
+                background-color: transparent;
+                color: $color-white-0;
+                padding-bottom: 3rem;
+                font-size: $fs-2 + 0.2;
+
+            }
+
         }
-        
+
     }
+    // dropdown responsive 
     .nav__dropdown-box {
         display: none;
+
         .respond-dropdown__phone {
             display: none;
         }
-        @include respond(phone){
+
+        @include respond(phone) {
             .respond-dropdown__phone {
                 display: block;
             }
         }
     }
-    @include respond(tab-port) { // width < 992?
+    // tab-port 
+    @include respond(tab-port) {
+
+        // width < 992?
         .footer-nav__tab-port {
             width: 0;
             display: none;
         }
+
         .nav__dropdown-box {
-            display:block;
+            display: block;
             width: 50%;
         }
     }
-    @include respond(phone){
+    // phone 
+    @include respond(phone) {
         .footer-nav__phone {
             display: none;
         }
+
         .nav__dropdown-box {
-            display:block;
+            display: block;
             width: 50%;
         }
+
         .nav__dropdown-box {
-            display:block;
+            display: block;
             width: 100%;
             padding: 0;
+
             .respond-dropdown__phone {
                 display: block;
             }
         }
     }
-    
-    
 }
+// secondary
 .footer__secondary {
     background-color: $color-dark-2;
     padding: 4rem 5rem;
     justify-content: space-between;
     align-items: baseline;
+
     .footer__messenger {
         justify-content: space-around;
+
         .messenger__box {
             .icon__round {
                 width: 4rem;
@@ -173,6 +204,7 @@
                 color: $color-white-0;
                 font-size: 2rem;
             }
+
             .messenger__text {
                 padding-left: 1.5rem;
                 line-height: 4rem;
@@ -181,24 +213,28 @@
             }
 
         }
-        @include respond(tab-port){
+
+        @include respond(tab-port) {
             .messenger__box-tab-port {
                 display: none;
                 width: 0%;
             }
         }
-        
 
-        
+
+
     }
+
     .footer__social {
         justify-content: flex-end;
+
         .social__text {
             padding-right: 3rem;
             line-height: 4rem;
             letter-spacing: 1px;
             @include styleText(1.6rem, 300, $color-white-0);
         }
+
         .icon__square {
             width: 4rem;
             height: 4rem;
@@ -207,38 +243,47 @@
             background-color: $color-blue-light-1;
             color: $color-white-0;
             font-size: 2rem;
-            margin-left:.5rem;
+            margin-left: .5rem;
         }
+
         .icon__fb {
             background-color: #4064AC;
             margin-left: 0;
         }
+
         .icon__tw {
             background-color: #71C9F8;
         }
+
         .icon__youtube {
             background-color: #FF0000;
         }
+
         .icon__in {
             background-color: #EDB7D9;
         }
 
     }
-    @include respond(phone){
+
+    @include respond(phone) {
         .footer__messenger {
             border-bottom: 1px solid $color-white-0;
             margin-bottom: 1rem;
         }
+
         .footer__social {
             padding: 1rem 0;
             justify-content: flex-start;
         }
     }
 }
+// tertiary 
 .footer__tertiary {
     padding: 5rem;
+    // logo and language 
     .footer__logo {
         justify-content: space-between;
+        // language icon 
         .footer__language {
             i {
                 font-size: $fs-4;
@@ -246,6 +291,7 @@
                 color: $color-blue-light-3;
                 transition: all .3s;
             }
+
             a {
                 display: inline-block;
                 text-decoration: underline;
@@ -253,67 +299,85 @@
                 vertical-align: 0.5rem;
                 transition: all .3s;
             }
-            &:hover i, &:hover a  {
+
+            &:hover i,
+            &:hover a {
                 color: $color-black-0;
             }
         }
-        .footer__logo-ford, .footer__logo-ford-phone  {
+        // logo ford 
+        .footer__logo-ford,
+        .footer__logo-ford-phone {
             text-align: right;
+
             img {
                 width: 50%;
             }
-        }  
+        }
     }
+    // logo responsive 
     .footer__logo-phone {
         display: none;
     }
-    @include respond(phone){
+    // responsive logo 
+    @include respond(phone) {
         .footer__logo-ford {
             display: none;
         }
-        .footer__logo-phone{
+
+        .footer__logo-phone {
             display: block;
             width: 20%;
         }
     }
-    .footer__copyright{
+    // copyright 
+    .footer__copyright {
         padding: 1rem 0;
+
         a {
             @include styleText($fs-1, $fw-normal, $color-gray-3_4);
             letter-spacing: 1px;
             text-decoration: none;
-            
+
         }
     }
+    // navbar 
     .footer__nav {
         padding: 0;
+
         .nav-text__box {
             justify-content: space-between;
+
             .nav-item {
                 list-style-type: none;
+
                 .nav-link {
-                      text-decoration: none;
-                      color: $color-gray-3_4;
-                      transition: all .2s;
-                      letter-spacing: 1px;
-                      padding: 0rem;
+                    text-decoration: none;
+                    color: $color-gray-3_4;
+                    transition: all .2s;
+                    letter-spacing: 1px;
+                    padding: 0rem;
+
                     &:hover {
-                      color: $color-dark-2;
-                  }
+                        color: $color-dark-2;
+                    }
                 }
-                .active{
-                  background-color: transparent;
-                  color: $color-white-0;
-              }
-                
+
+                .active {
+                    background-color: transparent;
+                    color: $color-white-0;
+                }
+
             }
-            @include respond(tab-port){
+
+            @include respond(tab-port) {
                 .nav-item {
                     width: 20%;
                     padding: 1rem 0;
                 }
             }
-            @include respond(phone){
+
+            @include respond(phone) {
                 .nav-item {
                     width: 100%;
                     padding: 1rem 0;

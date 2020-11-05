@@ -19,18 +19,14 @@
 /*--------------------
 -----Dep 2: Vương----
 --------------------*/
+// button blue small
 .btn-blue {
     @include styleBtn($color-blue-light-3, $color-blue-light-3, $border-radius, $pd-3, $pd-6);
     margin: 40px  0 0 0;
     text-align: center;
     transition: all .1s;
     .btn-link {
-        text-decoration: none;
-        letter-spacing: 2px;
-        text-align: center;
-        color: $color-white-0;
-        font-size: $fs-2;
-        padding: 0 $pd-6;
+        @extend .btn-link;
     }
     &:hover{
         @include styleBtn($color-white-0, $color-blue-light-3, $border-radius, $pd-3, $pd-6);
@@ -39,18 +35,14 @@
         }
     }
 }
+// button blue  big
 .btn-blue-big {
     @include styleBtn($color-blue-light-3, $color-blue-light-3, $border-radius, $pd-3, $pd-2);
     margin: 0;
     text-align: center;
     transition: all .1s;
     .btn-link {
-        text-decoration: none;
-        letter-spacing: 2px;
-        text-align: center;
-        color: $color-white-0;
-        font-size: $fs-2;
-        padding: 0 $pd-6;
+        @extend .btn-link;
     }
     &:hover{
         @include styleBtn($color-white-0, $color-blue-light-3, $border-radius, $pd-3, $pd-2);
@@ -59,18 +51,14 @@
         }
     }
 }
+// button orange big 
 .btn-orange {
     @include styleBtn($color-orange-1, $color-orange-1, $border-radius, $pd-3, $pd-5);
     margin: 40px  0 0 0;
     text-align: center;
     transition: all .1s;
     .btn-link {
-        text-decoration: none;
-        letter-spacing: 2px;
-        text-align: center;
-        color: $color-white-0;
-        font-size: $fs-2;
-        padding: 0 $pd-6;
+        @extend .btn-link;
     }
     &:hover{
         @include styleBtn($color-white-0, $color-orange-1, $border-radius, $pd-3, $pd-5);

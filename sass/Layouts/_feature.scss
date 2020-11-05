@@ -1,14 +1,17 @@
 .feature__section {
     background-color: $color-white-1;
     padding: $pd-6;
+
     .header__primary {
         @include Header__primary($color-orange-1);
         margin: 0;
     }
+
     .header__text {
         @include styleText($fs-2 + 0.2, 300, $color-black-0);
         text-align: center;
     }
+    
     .introduction__img {
         img {
             width: 100%;
