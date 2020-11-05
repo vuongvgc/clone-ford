@@ -869,4 +869,22 @@ body {
 .ford-dropdown__item .ford-hide {
   max-height: 0;
 }
+
+.back-to-top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  display: none;
+}
+
+.btn-round {
+  border-radius: 50%;
+  border-color: #686f7a;
+  background-color: #686f7a;
+  padding: 0.6rem 1rem;
+}
+
+.btn-round i {
+  color: #fff;
+}
 /*# sourceMappingURL=main.css.map */

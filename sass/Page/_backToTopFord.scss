@@ -1,0 +1,15 @@
+.back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: none;
+}
+.btn-round {
+    border-radius: 50%;
+    border-color:$color-gray-2;
+    background-color: $color-gray-2;
+    padding: 0.6rem 1rem;
+    i {
+        color: $color-white-0;
+    }
+}
