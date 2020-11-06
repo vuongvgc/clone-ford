@@ -390,8 +390,15 @@ body {
   padding: 0;
   margin: 0;
   list-style-type: none;
-  scrollbar-width: 2rem;
-  scrollbar-color: red !important;
+  /* width */
+}
+
+.disclosure__content .disclosures__text::-webkit-scrollbar {
+  width: 10px;
+}
+
+.disclosure__content .disclosures__text::-webkit-scrollbar-thumb {
+  background: red;
 }
 
 .footer__banner {

@@ -37,7 +37,14 @@
     padding: 0;
     margin: 0;
     list-style-type: none;
-    scrollbar-width: 2rem;
-    scrollbar-color: red !important;
+    /* width */
+    &::-webkit-scrollbar {
+      width: 10px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: red; 
+    }
   }
+  
+  
 }
