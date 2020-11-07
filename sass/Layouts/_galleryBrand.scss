@@ -4,16 +4,17 @@
     .galleryBrand__box {
         width: 100%;
         overflow: hidden;
-
-        img {
-            width: 100%;
-            transform: scale(1);
-            transition: all .2s;
-        }
-
-        &:hover {
+        .galleryBrand__img {
             img {
-                transform: scale(1.1);
+                width: 100%;
+                transform: scale(1);
+                transition: all .2s;
+            }
+    
+            &:hover {
+                img {
+                    transform: scale(1.1);
+                }
             }
         }
     }
