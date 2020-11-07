@@ -1,0 +1,27 @@
+.header__brand  {
+    justify-content: space-between;
+    align-items: baseline;
+    background-color: #F2F2F2;
+    padding: 0.5rem;
+    .brand__box {
+        padding-left: 2rem;
+        img {
+            width: 25%;
+        }
+        span {
+            @include styleText($fs-0, $fw-normal, #2E80BA);
+            text-transform: uppercase;
+        }
+    }
+    .brand__location {
+        text-align: center;
+        i {
+            font-size: $fs-3;
+        }
+        span {
+            letter-spacing: 1px;
+            padding-left: 1rem;
+            @include styleText($fs-0, $fw-bold, $color-blue-light-2);
+        }
+    }
+}
