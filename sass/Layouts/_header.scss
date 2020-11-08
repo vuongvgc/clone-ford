@@ -25,3 +25,33 @@
         }
     }
 }
+#header__nav {
+    background-color: $color-white-0;
+    padding: 0 2rem;
+    .navbar-expand-lg {
+        position: relative;
+        .dropdown {
+            position: static;
+            .dropdown-item__full {
+                width: 95vw;
+            }
+        }
+    }
+    .header__main {
+        justify-content: space-between;
+        .navbar-nav {
+            .nav-link {
+                @include styleText($fs-2, $fw-normal, $color-blue-light-3);
+                letter-spacing: 1px;
+                transition: all .2s;
+                margin-left: 1.5rem;
+                &:hover {
+                    color: $color-dark-0;
+                }
+            }
+        }
+        
+    }
+    
+
+ }

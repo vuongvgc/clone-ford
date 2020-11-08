@@ -202,6 +202,40 @@ body {
   color: #37a9e8;
 }
 
+#header__nav {
+  background-color: #fff;
+  padding: 0 2rem;
+}
+
+#header__nav .navbar-expand-lg {
+  position: relative;
+}
+
+#header__nav .navbar-expand-lg .dropdown {
+  position: static;
+}
+
+#header__nav .navbar-expand-lg .dropdown .dropdown-item__full {
+  width: 95vw;
+}
+
+#header__nav .header__main {
+  justify-content: space-between;
+}
+
+#header__nav .header__main .navbar-nav .nav-link {
+  font-size: 1.4rem;
+  font-weight: normal;
+  color: #0276b3;
+  letter-spacing: 1px;
+  transition: all .2s;
+  margin-left: 1.5rem;
+}
+
+#header__nav .header__main .navbar-nav .nav-link:hover {
+  color: #3C526F;
+}
+
 .introduction__section .header__primary {
   color: #333333;
   font-size: 4.2rem;
