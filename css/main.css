@@ -164,6 +164,15 @@ body {
   color: #d92e14;
 }
 
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  z-index: 999;
+}
+
 .header__brand {
   justify-content: space-between;
   align-items: baseline;
@@ -216,7 +225,7 @@ body {
 }
 
 #header__nav .navbar-expand-lg .dropdown .dropdown-item__full {
-  width: 95vw;
+  width: 98vw;
 }
 
 #header__nav .header__main {
