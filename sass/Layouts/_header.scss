@@ -1,3 +1,4 @@
+// header fixed on top
 header {
     position: fixed;
     top: 0;
@@ -6,26 +7,34 @@ header {
     height: 50px;
     z-index: 999;
 }
-.header__brand  {
+
+// header brand 
+.header__brand {
     justify-content: space-between;
     align-items: baseline;
     background-color: #F2F2F2;
     padding: 0.5rem;
+    // box 
     .brand__box {
         padding-left: 2rem;
+
         img {
             width: 25%;
         }
+
         span {
             @include styleText($fs-0, $fw-normal, #2E80BA);
             text-transform: uppercase;
         }
     }
+    // location 
     .brand__location {
         text-align: center;
+
         i {
             font-size: $fs-3;
         }
+
         span {
             letter-spacing: 1px;
             padding-left: 1rem;
@@ -33,18 +42,23 @@ header {
         }
     }
 }
+// navbar and dropdown 
 #header__nav {
     background-color: $color-white-0;
     padding: 0 2rem;
-    .navbar-expand-lg {
+    // navbar 
+    .navbar {
         position: relative;
+        // dropdown big 
         .dropdown {
             position: static;
+
             .dropdown-item__full {
                 width: 100vw;
                 height: 75vh;
                 overflow-y: auto;
             }
+        // menu  
             .dropdown-menu {
                 margin-top: -0.1rem;
                 left: -2rem;
@@ -52,64 +66,79 @@ header {
             }
         }
     }
+    // header main 
     .header__main {
         justify-content: space-between;
+        // navbar link 
         .navbar-nav {
             .nav-link {
                 @include styleText($fs-2, $fw-normal, $color-blue-light-3);
                 letter-spacing: 1px;
                 transition: all .2s;
                 margin-left: 1.5rem;
+
                 &:hover {
                     color: $color-dark-0;
                 }
             }
-            @include respond(tab-port){
+
+            @include respond(tab-port) {
                 .nav-link {
                     font-size: $fs-1;
                     margin-left: 1rem;
-                    
+
                 }
             }
-            @include respond(tab-land){
+
+            @include respond(tab-land) {
                 .nav-link {
                     font-size: $fs-1;
                     margin-left: 1rem;
-                    
+
                 }
             }
         }
+        // delele button dropdown 
         .dropdown-toggle::after {
             display: none;
         }
     }
+    // dropdown item 
     .dropdown-item__full {
+        // box 
         .nav-car__box {
             padding: 2rem;
+            // item
             .nav-car__item {
                 img {
                     width: 100%;
                 }
+                // header 
                 .nav-car__header {
                     text-decoration: none;
                     display: block;
                     @include styleText($fs-2, $fw-normal, $color-dark-2);
                     margin-bottom: 1rem;
                     text-transform: uppercase;
+
                     i {
                         display: none;
                         transition: all .2s;
                     }
+
                     &:hover i {
                         display: inline-block;
                     }
                 }
+                // text price 
                 p {
                     @include styleText($fs-0, $fw-normal, #4d4d4d);
                     margin-bottom: 1rem;
                 }
+                // button 
                 .nav-car__button {
                     margin-bottom: 0.5rem;
+
                     a {
                         text-decoration: none;
                         padding-bottom: 2px;
@@ -117,25 +146,26 @@ header {
                         @include styleText($fs-2, $fw-normal, $color-blue-light-3);
                     }
                 }
-               
-                
-            
-            }   
+            }
         }
+
         .dropdown-item__bottom {
             padding: 1.5rem;
             background-color: $color-white-1;
+
             .btn-nav__dropdown {
                 border-radius: 25px;
                 margin: 0 2rem;
                 padding: 1rem 4rem;
                 @include styleText($fs-1, $fw-normal, $color-white-1);
-                &:hover{
+
+                &:hover {
                     color: $color-blue-light-3;
                     border: 1px solid $color-blue-light-3
-                } 
+                }
             }
-            @include respond(phone){
+
+            @include respond(phone) {
                 .btn-nav__dropdown {
                     margin: 0 auto;
                     margin-bottom: 1rem;
@@ -143,7 +173,7 @@ header {
             }
 
         }
-       
-        
+
+
     }
- }
+}

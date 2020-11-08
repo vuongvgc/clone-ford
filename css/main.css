@@ -216,21 +216,21 @@ header {
   padding: 0 2rem;
 }
 
-#header__nav .navbar-expand-lg {
+#header__nav .navbar {
   position: relative;
 }
 
-#header__nav .navbar-expand-lg .dropdown {
+#header__nav .navbar .dropdown {
   position: static;
 }
 
-#header__nav .navbar-expand-lg .dropdown .dropdown-item__full {
+#header__nav .navbar .dropdown .dropdown-item__full {
   width: 100vw;
   height: 75vh;
   overflow-y: auto;
 }
 
-#header__nav .navbar-expand-lg .dropdown .dropdown-menu {
+#header__nav .navbar .dropdown .dropdown-menu {
   margin-top: -0.1rem;
   left: -2rem;
   border: none;
@@ -373,7 +373,8 @@ header {
   transform: scale(1.2);
 }
 
-.carousel__section #carousel-Ford-Indicators .carousel-control-prev-icon, .carousel__section #carousel-Ford-Indicators .carousel-control-next-icon {
+.carousel__section #carousel-Ford-Indicators .carousel-control-prev-icon,
+.carousel__section #carousel-Ford-Indicators .carousel-control-next-icon {
   background-color: rgba(85, 85, 85, 0.8);
   padding: 3rem;
   position: absolute;
