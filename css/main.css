@@ -236,6 +236,71 @@ body {
   color: #3C526F;
 }
 
+#header__nav .dropdown-item__full .nav-car__box {
+  padding: 2rem;
+}
+
+#header__nav .dropdown-item__full .nav-car__box .nav-car__item img {
+  width: 100%;
+}
+
+#header__nav .dropdown-item__full .nav-car__box .nav-car__item .nav-car__header {
+  text-decoration: none;
+  display: block;
+  font-size: 1.4rem;
+  font-weight: normal;
+  color: #102b4e;
+  margin-bottom: 1rem;
+}
+
+#header__nav .dropdown-item__full .nav-car__box .nav-car__item .nav-car__header i {
+  display: none;
+  transition: all .2s;
+}
+
+#header__nav .dropdown-item__full .nav-car__box .nav-car__item .nav-car__header:hover i {
+  display: inline-block;
+}
+
+#header__nav .dropdown-item__full .nav-car__box .nav-car__item p {
+  font-size: 1.2rem;
+  font-weight: normal;
+  color: #4d4d4d;
+  margin-bottom: 1rem;
+}
+
+#header__nav .dropdown-item__full .nav-car__box .nav-car__item .nav-car__button {
+  margin-bottom: 0.5rem;
+}
+
+#header__nav .dropdown-item__full .nav-car__box .nav-car__item .nav-car__button a {
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #0276b3;
+  font-size: 1.4rem;
+  font-weight: normal;
+  color: #0276b3;
+}
+
+#header__nav .dropdown-item__full .dropdown-item__bottom {
+  padding: 1.5rem;
+  background-color: #f7f7f7;
+}
+
+#header__nav .dropdown-item__full .dropdown-item__bottom .btn-nav__dropdown {
+  border-radius: 25px;
+  margin: 0 2rem;
+  padding: 1rem 4rem;
+  font-size: 1.3rem;
+  font-weight: normal;
+  color: #f7f7f7;
+}
+
+#header__nav .dropdown-item__full .dropdown-item__bottom .btn-nav__dropdown:hover {
+  color: #0276b3;
+  border: 1px solid #0276b3;
+}
+
 .carousel__section #carousel-Ford-Indicators {
   position: relative;
 }
