@@ -103,6 +103,11 @@
                     border: 1px solid $color-blue-light-3
                 } 
             }
+            @include respond(phone){
+                .btn-nav__dropdown {
+                    margin-bottom: 1rem;
+                }
+            }
 
         }
        

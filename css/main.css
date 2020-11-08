@@ -251,6 +251,7 @@ body {
   font-weight: normal;
   color: #102b4e;
   margin-bottom: 1rem;
+  text-transform: uppercase;
 }
 
 #header__nav .dropdown-item__full .nav-car__box .nav-car__item .nav-car__header i {
@@ -299,6 +300,12 @@ body {
 #header__nav .dropdown-item__full .dropdown-item__bottom .btn-nav__dropdown:hover {
   color: #0276b3;
   border: 1px solid #0276b3;
+}
+
+@media only screen and (max-width: 48em) {
+  #header__nav .dropdown-item__full .dropdown-item__bottom .btn-nav__dropdown {
+    margin-bottom: 1rem;
+  }
 }
 
 .carousel__section #carousel-Ford-Indicators {
