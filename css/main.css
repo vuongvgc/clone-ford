@@ -541,6 +541,10 @@ header {
   margin: 20px 0px 10px;
 }
 
+.galleryBrand__section .galleryBrand__box-4 {
+  width: 100%;
+}
+
 .galleryBrand__section .galleryBrand__box-4 .galleryBrand__text {
   font-size: 2.75rem;
 }
