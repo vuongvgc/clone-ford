@@ -374,18 +374,19 @@ header {
 }
 
 .carousel__section #carousel-Ford-Indicators .carousel-control-prev-icon, .carousel__section #carousel-Ford-Indicators .carousel-control-next-icon {
-  background-color: #686f7a;
-  padding: 4rem;
+  background-color: rgba(85, 85, 85, 0.8);
+  padding: 3rem;
   position: absolute;
-  opacity: 0.7;
 }
 
 .carousel__section #carousel-Ford-Indicators .carousel-control-prev-icon {
   left: 0;
+  background-image: url("../../img/left-chevron.svg");
 }
 
 .carousel__section #carousel-Ford-Indicators .carousel-control-next-icon {
   right: 0;
+  background-image: url("../../img/right-chevron.svg");
 }
 
 .carousel__section #carousel-Ford-Indicators .carousel-inner .carousel-item {
