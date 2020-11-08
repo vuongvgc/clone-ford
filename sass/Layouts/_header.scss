@@ -79,6 +79,9 @@ header {
                 }
             }
         }
+        .dropdown-toggle::after {
+            display: none;
+        }
     }
     .dropdown-item__full {
         .nav-car__box {
