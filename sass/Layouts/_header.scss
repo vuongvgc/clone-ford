@@ -41,7 +41,14 @@ header {
         .dropdown {
             position: static;
             .dropdown-item__full {
-                width: 98vw;
+                width: 100vw;
+                height: 75vh;
+                overflow-y: auto;
+            }
+            .dropdown-menu {
+                margin-top: -0.1rem;
+                left: -2rem;
+                border: none;
             }
         }
     }
@@ -127,6 +134,7 @@ header {
             }
             @include respond(phone){
                 .btn-nav__dropdown {
+                    margin: 0 auto;
                     margin-bottom: 1rem;
                 }
             }

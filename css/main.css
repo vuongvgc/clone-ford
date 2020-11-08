@@ -225,7 +225,15 @@ header {
 }
 
 #header__nav .navbar-expand-lg .dropdown .dropdown-item__full {
-  width: 98vw;
+  width: 100vw;
+  height: 75vh;
+  overflow-y: auto;
+}
+
+#header__nav .navbar-expand-lg .dropdown .dropdown-menu {
+  margin-top: -0.1rem;
+  left: -2rem;
+  border: none;
 }
 
 #header__nav .header__main {
@@ -327,6 +335,7 @@ header {
 
 @media only screen and (max-width: 48em) {
   #header__nav .dropdown-item__full .dropdown-item__bottom .btn-nav__dropdown {
+    margin: 0 auto;
     margin-bottom: 1rem;
   }
 }
