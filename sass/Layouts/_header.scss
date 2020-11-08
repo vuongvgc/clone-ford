@@ -57,6 +57,20 @@ header {
                     color: $color-dark-0;
                 }
             }
+            @include respond(tab-port){
+                .nav-link {
+                    font-size: $fs-1;
+                    margin-left: 1rem;
+                    
+                }
+            }
+            @include respond(tab-land){
+                .nav-link {
+                    font-size: $fs-1;
+                    margin-left: 1rem;
+                    
+                }
+            }
         }
     }
     .dropdown-item__full {

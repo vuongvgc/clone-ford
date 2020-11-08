@@ -245,6 +245,20 @@ header {
   color: #3C526F;
 }
 
+@media only screen and (max-width: 62em) {
+  #header__nav .header__main .navbar-nav .nav-link {
+    font-size: 1.3rem;
+    margin-left: 1rem;
+  }
+}
+
+@media only screen and (max-width: 75em) {
+  #header__nav .header__main .navbar-nav .nav-link {
+    font-size: 1.3rem;
+    margin-left: 1rem;
+  }
+}
+
 #header__nav .dropdown-item__full .nav-car__box {
   padding: 2rem;
 }
